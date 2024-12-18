@@ -1,0 +1,92 @@
+.myBody {
+    font-family: monospace, sans-serif;
+    background-color: rgb(37, 37, 37);
+    color: #0f0;
+    margin: 0;
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+table th {
+    background-color:rgb(168, 168, 168);
+}
+form {
+    display: inline;
+}
+.terminal-container {
+    padding: 10px;
+    background-color: rgb(3, 3, 3);
+    border: 2px solid #0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+    height: 60vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    margin-top: 10px;
+
+}
+
+#command {
+    background-color: transparent;
+    border: none;
+    color: #0f0;
+    flex-grow: 1;
+    outline: none;
+}
+
+.prompt {
+    color: #0f0;
+}
+
+.output {
+    white-space: pre-wrap; /* Menjaga format teks (termasuk spasi dan baris baru) */
+    word-wrap: break-word;
+    flex-grow: 1;
+    overflow-y: auto;
+    font-size: 1rem; /* Mengatur ukuran font untuk keterbacaan yang lebih baik */
+    line-height: 1.5; /* Menambahkan jarak antar baris */
+    color: #0f0;
+}
+
+.output pre {
+    margin: 0; /* Menghilangkan margin default pada pre */
+    color: #0f0; /* Menetapkan warna teks output */
+}
+
+.modal-content {
+    background-color: rgb(37, 37, 37);
+    color: #0f0;
+}
+.bgModal {
+    background-color: rgb(37, 37, 37);
+}
+.tool {
+    padding: 20px;
+    border: solid 1px grey;
+    border-radius: 10px;
+    display: flex;
+}
+.tool .h6tool {
+    text-align: center;
+    font-size: 1.5rem
+}
+.pwd {
+    padding: 20px;
+    border: solid 1px grey;
+}
+@media (max-width: 768px) {
+    .terminal-container {
+        height: 50vh;
+    }
+}
