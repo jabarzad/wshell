@@ -43,4 +43,19 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('modal-file-content').value = fileContent;
         });
     });
-});  
+});
+
+/* Nulis */
+const textToType = "The wSploit Shell Backdoor";
+const typingSpeed = 100; // Typing speed in ms
+const textElement = document.querySelector(".text");
+let charIndex = 0;
+function typeText() {
+  if (charIndex < textToType.length) {
+    textElement.textContent += textToType[charIndex];
+    charIndex++;
+    setTimeout(typeText, typingSpeed);
+  }
+}
+// Start typing animation
+typeText();

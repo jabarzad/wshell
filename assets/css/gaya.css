@@ -85,8 +85,51 @@ form {
     padding: 20px;
     border: solid 1px grey;
 }
-@media (max-width: 768px) {
-    .terminal-container {
-        height: 50vh;
+.btn2 {
+    color: white;
+    background-color: rgba(0, 255, 0, 0.3);
+    border-radius: 10px;
+}
+.syninput {
+    border-radius: 10px;
+}
+/* gaya Nulis */
+.typing-container {
+    display: inline-block;
+    position: relative; /* Gunakan relative agar menyesuaikan tata letak */
+    font-size: 24px;
+    margin-top: 10px; /* Jarak dengan elemen di atasnya */
+}
+.text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 35px;
+    border-right: 3px solid transparent; /* Hide default border initially */
+}
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 24px;
+    background-color: green;
+    animation: blink 0.8s infinite;
+}
+.cim {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    height: 100px;
+    flex-direction: ;
+    align-items: left;
+}
+.cim img {
+    max-width: 100%;
+    height: auto;
+    border: 1px;
+    border-radius: 100%;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
     }
 }
